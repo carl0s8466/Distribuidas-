@@ -1,4 +1,4 @@
-package com.example.ms_games;
+package com.example.ms_kajita;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class MsGamesApplication {
+public class MsCatalogoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsGamesApplication.class, args);
+        SpringApplication.run(MsCatalogoApplication.class, args);
     }
 
     @Bean

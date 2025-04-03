@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>ms_games</artifactId>
+    <artifactId>ms_kajita</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ms-games</name>
-    <description>ms-games</description>
+    <name>ms-kajita</name>
+    <description>ms-kajita</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
