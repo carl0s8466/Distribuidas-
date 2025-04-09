@@ -1,9 +1,7 @@
-  @SpringBootApplication
-    @EnableEurekaServer
-    public class MsRegistryServerApplication {
-    
-    public static void main(String[] args) {
-    SpringApplication.run(MsRegistryServerApplication.class, args);
-    }
-  
-  }
+spring:
+  application:
+    name: ms-gateway-server
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://root:123456@localhost:7070
