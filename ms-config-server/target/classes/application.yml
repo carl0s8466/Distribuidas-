@@ -18,6 +18,7 @@ spring:
           uri: https://github.com/carl0s8466/Distribuidas- # ruta del repositorio git
           searchPaths: config-data
           default-label: main
+
   security:
     user:
       name: root
