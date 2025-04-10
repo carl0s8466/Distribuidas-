@@ -20,7 +20,8 @@ spring:
         - id: ms-catalogo-service
           uri: lb://ms-catalogo-service
           predicates:
-            - Path=/categorias/**, /productos/**
+            - Path=/categorias/**
+
         - id: ms-games-service
           uri: lb://ms-games-service
           predicates:
