@@ -13,7 +13,7 @@ public interface CatalogoFeign {
     @CircuitBreaker(name = "categoriaListarPorIdCB", fallbackMethod = "fallbackProductoById")
     public ResponseEntity<CategoriaDto> buscarCategoria(@PathVariable Integer id);
 
-    default ResponseEntity<CategoriaDto> fallbackProductoById(@PathVariable Integer id) {
+    default ResponseEntity<CategoriaDto> fallbackProductoById(Integer id, Exception e){
         CategoriaDto categoriaDto = new CategoriaDto();
         categoriaDto.setNombre("Servicio de catalogo no disponible KR :C");
         return ResponseEntity.ok(categoriaDto);
